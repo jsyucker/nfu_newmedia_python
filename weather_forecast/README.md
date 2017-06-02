@@ -1,4 +1,4 @@
-weather_forecast
+weather_forecast.py
 # 简介 
 天气查询，操练Python语言开发练习：使用flask
 ## 输入：
