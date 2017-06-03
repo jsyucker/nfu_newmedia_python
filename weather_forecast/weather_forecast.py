@@ -26,6 +26,11 @@ def get_weather(city_name):
         response_life = urllib.request.urlopen(url_life)
         weather_html_life = response_life.read()
         json_data_life = json.loads(weather_html_life)
+         #api未来三天天气预报api
+        url_forecast = (' https://free-api.heweather.com/v5/forecast?city={code}&key=50246ea62fbd405c9315e51d2a1d29c0'.format(code=city_code))
+        response_forecast = urllib.request.urlopen(url_forecast)
+        weather_html_forecast = response_forecast.read()
+        json_data_forecast = json.loads(weather_html_forecast)
 
 
         data_life = json_data_life['HeWeather5'][0]
